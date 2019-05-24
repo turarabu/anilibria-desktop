@@ -1,0 +1,49 @@
+{
+    "name": "anilibria-desktop",
+    "version": "0.2.0",
+    "description": "AniLibria TV desktop application",
+    "main": "main.js",
+    "license": "MIT",
+    "homepage": "https://github.com/anilibria/electron",
+    "scripts": {
+        "start": "electron main"
+    },
+    "build": {
+        "asar": false,
+        "files": [
+            "./**",
+            ".git",
+            "!node_modules"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/anilibria/electron.git"
+    },
+    "keywords": [
+        "Electron",
+        "Vue",
+        "AniLibria"
+    ],
+    "author": {
+        "name": "Turar Abu",
+        "email": "mail@turarabu.me",
+        "url": "https://www.turarabu.me/"
+    },
+    "bugs": {
+        "url": "https://github.com/anilibria/electron/issues"
+    },
+    "dependencies": {
+        "express": "^4.17.0",
+        "node-fetch": "^2.6.0",
+        "update-electron-app": "^1.3.0"
+    },
+    "devDependencies": {
+        "electron": "^5.0.1",
+        "pug": "^2.0.3",
+        "pug-plain-loader": "^1.0.0",
+        "stylus": "^0.54.5",
+        "stylus-loader": "^3.0.2",
+        "vue-template-compiler": "^2.6.10"
+    }
+}
